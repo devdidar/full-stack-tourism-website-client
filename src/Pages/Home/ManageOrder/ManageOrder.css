@@ -1,0 +1,17 @@
+.pending {
+  padding: 2px 5px;
+  background-color: red;
+  color: white;
+  margin: 5px 0px;
+  width: 90px;
+
+  border-radius: 5px;
+}
+.approved {
+  background-color: #4f46e5;
+  padding: 2px 5px;
+  color: white;
+  margin: 5px 0px;
+  width: 90px;
+  border-radius: 5px;
+}
