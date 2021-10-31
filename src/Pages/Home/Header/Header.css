@@ -1,3 +1,31 @@
 .nav-link a {
   margin-right: 38px;
 }
+
+@media only screen and (max-width: 666px) {
+  .nav-section {
+    display: block;
+  }
+
+  .bar-icon {
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-nav-link {
+    margin-left: 190px;
+  }
+  .nav-link a {
+    display: block;
+  }
+  .logo {
+    display: inline-block;
+  }
+}

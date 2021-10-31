@@ -15,7 +15,7 @@ const TripDetails = () => {
   };
   const { id } = useParams();
   useEffect(() => {
-    fetch(`http://localhost:5000/trip/${id}`)
+    fetch(`https://eerie-witch-93352.herokuapp.com/trip/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setTripDetails(data);
@@ -33,7 +33,7 @@ const TripDetails = () => {
       ...data,
       ...postTripDetails,
     };
-    fetch("http://localhost:5000/bookATrip", {
+    fetch("https://eerie-witch-93352.herokuapp.com/bookATrip", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -51,7 +51,7 @@ const TripDetails = () => {
 
   return (
     <div>
-      <div className="flex items-center tripDetails gap-10">
+      <div className="flex items-center tripDetails gap-10 ">
         <div>
           <img src={tripDetails?.img} alt="" />
         </div>

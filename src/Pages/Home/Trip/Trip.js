@@ -8,11 +8,11 @@ const Trip = ({ trip }) => {
       <div className="ml-4">
         <img src={img} alt="" />
       </div>
-      <div>
+      <div className="title-mobile">
         <h1 className="text-xl font-semibold mb-2">{name}</h1>
         <p>{desc.slice(0, 200)}</p>
       </div>
-      <div>
+      <div className="price-mobile">
         <p className="text-xl">${price}</p>
         <p className="text-sm text-gray-800 my-2">per person</p>
         <Link to={`/tripDetails/${_id}`}>

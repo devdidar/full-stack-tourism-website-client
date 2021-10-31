@@ -1,0 +1,9 @@
+@media only screen and (max-width: 666px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

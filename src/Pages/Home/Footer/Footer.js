@@ -17,8 +17,8 @@ const Footer = () => {
           <nav className="flex flex-col	">
             <Link to="/home">Home</Link>
             <Link to="/trips">Trip Package</Link>
-            <Link to="/hotels">Hotels</Link>
-            <Link to="/contactUs">Contact us</Link>
+            <Link to="/guide">Tour Guide</Link>
+            <Link to="/contactUs">Contact Us</Link>
           </nav>
         </div>
       </div>

@@ -4,7 +4,7 @@ import ManageOrder from "../ManageOrder/ManageOrder";
 const ManageOrders = () => {
   const [manageOrders, setManageOrders] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/bookedTrip")
+    fetch("https://eerie-witch-93352.herokuapp.com/bookedTrip")
       .then((res) => res.json())
       .then((data) => {
         setManageOrders(data);

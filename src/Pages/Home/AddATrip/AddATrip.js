@@ -10,7 +10,7 @@ const AddATrip = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    fetch(" http://localhost:5000/addATrip", {
+    fetch("https://eerie-witch-93352.herokuapp.com/addATrip", {
       method: "POST",
       headers: {
         "content-type": "application/json",

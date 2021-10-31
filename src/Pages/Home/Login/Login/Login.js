@@ -6,7 +6,6 @@ const Login = () => {
   const { handleSignInUsingGoogle } = useAuth();
   const location = useLocation();
   const uri = location.state?.from || "/";
-  console.log(uri);
   const history = useHistory();
   const handleRedirect = () => {
     handleSignInUsingGoogle().then(() => {

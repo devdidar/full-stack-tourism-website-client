@@ -5,26 +5,27 @@ const MyOrder = ({ order }) => {
   const handleDelete = (id) => {
     const warning = window.confirm("are you want to delete?");
     if (warning) {
-      fetch(`http://localhost:5000/deleteMyTrip/${id}`, {
+      fetch(`https://eerie-witch-93352.herokuapp.com/deleteMyTrip/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
         .then((data) => {
-
-          console.log(data)
+          if (data.deletedCount > 0) {
+            window.alert("successfully deleted");
+          }
         });
     }
   };
   return (
     <div className="grid grid-cols-3 gap-4 justify-center items-center trip ">
-      <div className="ml-4">
+      <div className="ml-4 order-img">
         <img src={img} alt="" />
       </div>
-      <div>
+      <div className="title-mobile">
         <h1 className="font-semibold text-xl mb-2">{name}</h1>
         <p>{desc.slice(0, 200)}</p>
       </div>
-      <div>
+      <div className="price-mobile">
         <p className="text-xl">${price}</p>
         <p className="text-sm text-gray-800 my-2">per person</p>
         <button

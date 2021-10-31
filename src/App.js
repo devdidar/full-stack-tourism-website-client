@@ -12,6 +12,8 @@ import PrivateRoute from './Pages/Home/PrivateRoute/PrivateRoute';
 import MyOrders from './Pages/Home/MyOrders/MyOrders';
 import ManageOrders from './Pages/Home/ManageOrders/ManageOrders';
 import AddATrip from './Pages/Home/AddATrip/AddATrip';
+import TourGuide from './Pages/Home/TourGuide/TourGuide';
+import ContactUs from './Pages/Home/ContactUs/ContactUs';
 function App() {
   return (
     <div>
@@ -30,6 +32,12 @@ function App() {
           </Route>
           <Route  path='/login'>
             <Login></Login>
+          </Route>
+          <Route  path='/guide'>
+            <TourGuide></TourGuide>
+          </Route>
+          <Route  path='/contactUs'>
+            <ContactUs></ContactUs>
           </Route>
           <PrivateRoute  path='/tripDetails/:id'>
             <TripDetails></TripDetails>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "./Banner.css";
 const Banner = () => {
   return (
-    <div className=" flex justify-between items-center">
+    <div className="flex justify-between items-center banner">
       <div className="ml-12">
         <h2 className="text-5xl my-2">Explore</h2>
         <h2 className="text-5xl">The World</h2>
@@ -18,11 +18,11 @@ const Banner = () => {
         </Link>
       </div>
 
-      <div>
+      <div className="banner-img">
         <img
           src="https://i.ibb.co/61pQtnj/banner.png"
           alt=""
-          className="banner-img inline-block"
+          className=" inline-block"
         />
       </div>
     </div>

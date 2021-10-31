@@ -6,7 +6,7 @@ const MyOrders = () => {
   const [myOrders, setMyOrders] = useState([]);
   const { user } = useAuth();
   useEffect(() => {
-    fetch(`http://localhost:5000/myBookedTrip/${user.email}`)
+    fetch(`https://eerie-witch-93352.herokuapp.com/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setMyOrders(data);
